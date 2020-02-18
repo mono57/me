@@ -1,0 +1,16 @@
+{
+    "plugins": [
+      [
+        "module-resolver",
+        {
+          "cwd": "babelrc",
+          "root": ["./src"],
+          "alias": {
+            "_assets": "./src/assets",
+            "_components": "./src/components",
+            "_templates": "./src/templates"
+          }
+        }
+      ]
+    ]
+}
