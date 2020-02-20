@@ -1,6 +1,7 @@
 import React, { Component } from "react";
+import * as COLORS from "../../styles/colors";
 import "./style.css";
-import Post from "../../components/post";
+// import Post from "../../components/post";
 import Footer from "../../components/footer";
 
 class Home extends Component {
@@ -8,83 +9,75 @@ class Home extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="container padding text-center">
-          <h1
-            className="display-3 text-primary align-items-center"
-            style={{ fontFamilly: "Roboto, sans-serif" }}
-          >
-            Hi, I'm AMONO{" "}
-            <span
+        <div className="container text-center my-5 mt-lg-5">
+          <div className="row">
+            <div className="col-12 col-md-1 col-lg-2"></div>
+            <div className="col-12 col-md-10 col-lg-8">
+              <h1
+                className="display-4 text-primary align-items-center"
+                style={{ fontFamilly: "Roboto, sans-serif" }}
+              >
+                <span role="img" aria-label="Hello">👋</span>, I'm Amono
+                {/* <span
               class="iconify"
               data-icon="feather:terminal"
               data-inline="false"
-            ></span>
-          </h1>
-          <p
-            className="mt-5 lead"
-            style={{ fontSize: "18px", fontFamily: "Roboto, sans-serif" }}
-          >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-            ducimus eos dolore? Incidunt odio explicabo illum quasi numquam
-            facere.
-          </p>
-          <p className="mt-5" style={{ textAlign: "center" }}>
-            <span
-              class="iconify mr-5"
-              style={{ fontSize: "30px" }}
-              data-icon="cib:github"
-              data-inline="false"
-            ></span>
+            ></span> */}
+              </h1>
+              {/* <h5>Call me mono57</h5> */}
+              <p
+                className="mt-5"
+                style={{
+                  fontSize: "18px",
+                  fontFamily: "Roboto, sans-serif",
+                  color: COLORS.GRAY_LIGHT
+                }}
+              >
+                <span className="text-uppercase font-weight-bold">Software developer | Freelance | Python Trainer | Entrepreneur</span>
+                 <br />
+                <br />
+                I write somethings about Django, React, React Native, Iot, Electronics and more... <br /> 
+                Check my Medium posts or my opensources github repositories
+                to know more about me. <br /> <br/>
+                Hire me ? Let me a text message on <a href="https://twitter.com/mono57_"> Twitter !</a>
+              </p>
+              <p className="mt-5" style={{ textAlign: "center" }}>
+                <a href="https://github.com/mono57"><span
+                  class="iconify mr-5"
+                  style={{ fontSize: "30px" }}
+                  data-icon="cib:github"
+                  data-inline="false"
+                ></span></a>
+                
+                <a href="https://twitter.com/mono57_"><span
+                  class="iconify mr-5"
+                  style={{ fontSize: "30px" }}
+                  data-icon="logos:twitter"
+                  data-inline="false"
+                ></span></a>
 
-            <span
-              class="iconify mr-5"
-              style={{ fontSize: "30px" }}
-              data-icon="logos:twitter"
-              data-inline="false"
-            ></span>
-            <span
-              class="iconify"
-              style={{ fontSize: "30px" }}
-              data-icon="cib:medium-m"
-              data-inline="false"
-            ></span>
-          </p>
+                <a href="https://medium.com/@mono57"><span
+                  class="iconify"
+                  style={{ fontSize: "30px" }}
+                  data-icon="cib:medium-m"
+                  data-inline="false"
+                ></span></a>
+              </p>
 
-          <div style={{ marginTop: "4rem" }} className="text-center">
-            <button className="btn btn-outline-primary mr-4">Posts</button>
-            <button className="btn btn-outline-primary  mr-4">Projects</button>
-            <button className="btn btn-outline-primary mr-4">Skills</button>
-          </div>
+              <div style={{ marginTop: "4rem" }} className="text-center">
+                <a href="https://medium.com/@mono57" className="btn btn-outline-primary m-2">Posts</a>
+                <a href="https://github.com/mono57" className="btn btn-outline-primary  m-2">
+                  OpenSources Projects
+                </a>
+                {/* <a href="https://medium.com/@mono57" className="btn btn-outline-primary m-2">Skills</a> */}
+              </div>
 
-          <hr style={{ margin: "5rem 0 5rem 0" }} className="text-primary" />
-
-          <div
-            className="text-center"
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              justifyContent: "center"
-            }}
-          >
-            <h3>Medium: Recents Posts</h3>
-
-            <Post />
-            <Post />
-
-            <p className="mt-5">
-              <span
-                class="iconify"
-                style={{ fontSize: "30px" }}
-                data-icon="ic:round-expand-more"
-                data-inline="false"
-              ></span>
-            </p>
+              
+            </div>
           </div>
         </div>
 
-            <Footer />
-
+        <Footer />
       </React.Fragment>
     );
   }

@@ -1,7 +1,15 @@
-.padding {
-    padding:  8rem 10rem 8rem 10rem !important;
+
+
+@media screen and (max-width: 500px) {
+    .padding-sm {
+        padding:  1rem !important;;
+    }
 }
 
-.padding-x-lg {
-    padding: 0 8rem 0 250px !important;
+
+
+@media screen and ( min-width: 800px ) {
+    .padding-lg {
+        padding:  8rem 10rem 8rem 10rem !important;
+    }
 }

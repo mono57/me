@@ -1,0 +1,1 @@
+export const GRAY_LIGHT = "#8f98a3"
