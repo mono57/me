@@ -17,7 +17,10 @@ class Home extends Component {
                 className="display-4 text-primary align-items-center"
                 style={{ fontFamilly: "Roboto, sans-serif" }}
               >
-                <span role="img" aria-label="Hello">👋</span>, I'm Amono
+                <span role="img" aria-label="Hello">
+                  👋
+                </span>
+                , I'm Amono
                 {/* <span
               class="iconify"
               data-icon="feather:terminal"
@@ -33,46 +36,62 @@ class Home extends Component {
                   color: COLORS.GRAY_LIGHT
                 }}
               >
-                <span className="text-uppercase font-weight-bold">Software developer | Freelance | Python Trainer | Entrepreneur</span>
-                 <br />
+                <span className="text-uppercase font-weight-bold">
+                  Software developer | Freelance | Python Trainer | Entrepreneur
+                </span>
                 <br />
-                I write somethings about Django, React, React Native, Iot, Electronics and more... <br /> 
-                Check my Medium posts or my opensources github repositories
-                to know more about me. <br /> <br/>
-                Hire me ? Let me a text message on <a href="https://twitter.com/mono57_"> Twitter !</a>
+                <br />
+                I write somethings about Django, React, React Native, Iot,
+                Electronics and soo more... <br />
+                Check my Medium posts or my opensources github repositories to
+                know more about me. <br /> <br />
+                To hire me, Let me a text message on{" "}
+                <a href="https://twitter.com/mono57_"> Twitter !</a>
               </p>
               <p className="mt-5" style={{ textAlign: "center" }}>
-                <a href="https://github.com/mono57"><span
-                  class="iconify mr-5"
-                  style={{ fontSize: "30px" }}
-                  data-icon="cib:github"
-                  data-inline="false"
-                ></span></a>
-                
-                <a href="https://twitter.com/mono57_"><span
-                  class="iconify mr-5"
-                  style={{ fontSize: "30px" }}
-                  data-icon="logos:twitter"
-                  data-inline="false"
-                ></span></a>
+                <a href="https://github.com/mono57">
+                  <span
+                    class="iconify mr-5"
+                    style={{ fontSize: "30px" }}
+                    data-icon="cib:github"
+                    data-inline="false"
+                  ></span>
+                </a>
 
-                <a href="https://medium.com/@mono57"><span
-                  class="iconify"
-                  style={{ fontSize: "30px" }}
-                  data-icon="cib:medium-m"
-                  data-inline="false"
-                ></span></a>
+                <a href="https://twitter.com/mono57_">
+                  <span
+                    class="iconify mr-5"
+                    style={{ fontSize: "30px" }}
+                    data-icon="logos:twitter"
+                    data-inline="false"
+                  ></span>
+                </a>
+
+                <a href="https://medium.com/@mono57">
+                  <span
+                    class="iconify"
+                    style={{ fontSize: "30px" }}
+                    data-icon="cib:medium-m"
+                    data-inline="false"
+                  ></span>
+                </a>
               </p>
 
               <div style={{ marginTop: "4rem" }} className="text-center">
-                <a href="https://medium.com/@mono57" className="btn btn-outline-primary m-2">Posts</a>
-                <a href="https://github.com/mono57" className="btn btn-outline-primary  m-2">
+                <a
+                  href="https://medium.com/@mono57"
+                  className="btn btn-outline-primary m-2"
+                >
+                  Posts
+                </a>
+                <a
+                  href="https://github.com/mono57"
+                  className="btn btn-outline-primary  m-2"
+                >
                   OpenSources Projects
                 </a>
                 {/* <a href="https://medium.com/@mono57" className="btn btn-outline-primary m-2">Skills</a> */}
               </div>
-
-              
             </div>
           </div>
         </div>
